@@ -105,6 +105,12 @@ h2{font-size:clamp(28px,3.6vw,42px);line-height:1.15;letter-spacing:-.01em;font-
 .cta .contacts{display:flex;flex-direction:column;gap:12px}
 .cta .contacts a{background:#fff;color:var(--ink);text-decoration:none;font-weight:700;padding:16px 20px;border-radius:14px;display:flex;justify-content:space-between}
 .cta .contacts a span{color:var(--muted);font-weight:500}
+.about{display:grid;grid-template-columns:340px 1fr;gap:48px;align-items:center}
+.about img{width:100%;border-radius:22px;box-shadow:0 24px 50px -20px rgba(60,40,20,.35)}
+.about ul{list-style:none;margin-top:20px}
+.about li{padding:8px 0 8px 28px;position:relative;border-top:1px solid var(--line)}
+.about li:before{content:"✓";position:absolute;left:0;color:var(--acc);font-weight:800}
+@media (max-width:760px){.about{grid-template-columns:1fr}.about img{max-width:300px}}
 footer{padding:34px 0;color:var(--muted);font-size:14px;text-align:center}
 @media (max-width:960px){
  .hero-grid,.cta{grid-template-columns:1fr}
@@ -186,6 +192,20 @@ footer{padding:34px 0;color:var(--muted);font-size:14px;text-align:center}
   <article class="case" data-k="bot"><img src="img/promvozduh.jpg" alt="ИИ-консультант по компрессорам"><div class="body"><span class="kind">ИИ-бот · B2B</span><h3>ПромВоздух — ИИ-консультант по продажам</h3><dl><dt>Задача</dt><dd>Менеджеры тратят время на типовые вопросы о моделях и наличии.</dd><dt>Сделано</dt><dd>Бот подбирает компрессор под задачу строго по каталогу и собирает заявку менеджеру.</dd><dt>Результат</dt><dd>Менеджер получает готового клиента, бот не выдумывает цены.</dd></dl><div class="links"><span style="color:var(--muted);font-weight:600">Видео диалога — по запросу</span></div></div></article>
   <article class="case" data-k="site"><img src="img/lume.jpg" alt="Лендинг студии ресниц"><div class="body"><span class="kind">Лендинг · услуги</span><h3>«Люмэ» — студия наращивания ресниц</h3><dl><dt>Задача</dt><dd>Мастеру нужен сайт, который сразу ведёт к записи.</dd><dt>Сделано</dt><dd>14 блоков: цены, свободные окошки, работы до/после, отзывы, форма записи в Google-таблицу.</dd><dt>Результат</dt><dd>Заявки приходят в таблицу, сайт удобен с телефона.</dd></dl><div class="links"><a href="https://lume-lash.netlify.app" target="_blank" rel="noopener">Сайт ↗</a></div></div></article>
   <article class="case" data-k="site"><img src="img/kamen.jpg" alt="Лендинг укладки брусчатки"><div class="body"><span class="kind">Лендинг · стройка</span><h3>«Каменный двор» — укладка брусчатки</h3><dl><dt>Задача</dt><dd>Показать качество работ и быстро посчитать смету для клиента.</dd><dt>Сделано</dt><dd>Калькулятор стоимости, портфолио работ, схемы укладки, заявка в Google-таблицу.</dd><dt>Результат</dt><dd>Клиент видит цену сразу и оставляет заявку.</dd></dl><div class="links"><a href="https://kamenny-dvor.netlify.app" target="_blank" rel="noopener">Сайт ↗</a></div></div></article>
+ </div>
+</div></section>
+
+<section id="about" style="padding-top:20px"><div class="wrap about">
+ <img src="img/sergey.jpg" alt="Сергей Пермяков">
+ <div>
+  <span class="tag">Обо мне</span>
+  <h2>Сергей Пермяков</h2>
+  <p class="lead">Vibe Coder и фрилансер. Делаю для малого бизнеса то, что экономит время и не даёт терять клиентов: CRM, трекеры задач, ИИ-ботов и сайты. Разрабатываю с помощью ИИ (Claude Code), поэтому быстрее и дешевле студии, — но каждый проект проверяю тестами и запускаю на сервере.</p>
+  <ul>
+   <li>Говорю на языке бизнеса, а не программистов</li>
+   <li>Показываю рабочую версию уже через несколько дней</li>
+   <li>Остаюсь на связи после запуска</li>
+  </ul>
  </div>
 </div></section>
 
