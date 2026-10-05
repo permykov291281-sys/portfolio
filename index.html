@@ -49,6 +49,7 @@ h2{font-size:clamp(28px,3.6vw,42px);line-height:1.15;letter-spacing:-.01em;font-
 .hero-img .badge b{display:block;font-size:18px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:38px}
 .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:38px}
+.svc .grid4{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
 .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
 .pain .card .ico{font-size:30px;margin-bottom:14px}
 .card h3{font-size:20px;margin-bottom:8px;line-height:1.25}
@@ -138,12 +139,12 @@ footer{padding:34px 0;color:var(--muted);font-size:14px;text-align:center}
 
 <section class="hero"><div class="wrap hero-grid">
  <div>
-  <span class="tag">CRM · ИИ-боты · сайты для малого бизнеса</span>
+  <span class="tag">CRM · ИИ-боты · сайты · SEO-тексты для малого бизнеса</span>
   <h1>Заявки —<br>в&nbsp;систему,<br><span>рутину — боту</span></h1>
-  <p class="lead">Делаю для салонов, студий, школ и магазинов CRM, трекеры задач, чат-ботов и лендинги. Первая рабочая версия — за несколько дней, цена фиксируется до старта.</p>
+  <p class="lead">Делаю для салонов, студий, школ и магазинов CRM, трекеры задач, чат-ботов, лендинги и SEO-тексты. Первая рабочая версия — за несколько дней, цена фиксируется до старта.</p>
   <div class="btns"><a class="btn" href="#contact">Получить разбор задачи</a><a class="btn ghost" href="#cases">Смотреть кейсы</a></div>
   <div class="stats">
-   <div><b>9</b><span>готовых проектов</span></div>
+   <div><b>11</b><span>готовых проектов</span></div>
    <div><b>1–3 дня</b><span>до первой версии</span></div>
    <div><b>в 2–4 раза</b><span>дешевле студии</span></div>
   </div>
@@ -173,15 +174,16 @@ footer{padding:34px 0;color:var(--muted);font-size:14px;text-align:center}
   <div class="card"><h3>ИИ-боты</h3><p>VK, Telegram, MAX: консультант или администратор с записью.</p><ul><li>ответы только по вашей базе</li><li>запись без накладок</li><li>напоминания клиентам</li></ul><div class="price">от 15 000 ₽<small>администратор — от 56 000 ₽</small></div></div>
   <div class="card"><h3>Лендинги</h3><p>Сайт, который превращает посетителя в заявку.</p><ul><li>адаптив под телефон</li><li>форма → Telegram и таблица</li><li>домен и хостинг</li></ul><div class="price">от 27 000 ₽<small>за 5–7 дней</small></div></div>
   <div class="card"><h3>Приложения под задачу</h3><p>Калькуляторы стоимости, личные кабинеты, журналы.</p><ul><li>веб или программа для Windows</li><li>под ваш процесс</li><li>с инструкцией</li></ul><div class="price">по ТЗ<small>оценка бесплатно</small></div></div>
+  <div class="card"><h3>SEO-тексты</h3><p>Страницы услуг, статьи в блог, карточки товаров для WB и Ozon.</p><ul><li>ключи без переспама</li><li>только проверенные факты</li><li>title и description</li></ul><div class="price">от 500 ₽<small>карточка · страница от 1 500 ₽</small></div></div>
  </div>
 </div></section>
 
 <section id="cases" style="padding-top:20px"><div class="wrap">
  <span class="tag">Кейсы</span>
  <h2>Проекты, которые можно открыть и потрогать</h2>
- <p class="lead">Код открыт на GitHub, у ботов — видео диалогов, у сайтов и CRM — рабочие демо.</p>
+ <p class="lead">Код открыт на GitHub, у ботов — видео диалогов, у сайтов и CRM — рабочие демо, у текстов — черновик и финал.</p>
  <div class="filters">
-  <button class="on" data-f="all">Все</button><button data-f="crm">CRM и приложения</button><button data-f="bot">Боты</button><button data-f="site">Сайты</button>
+  <button class="on" data-f="all">Все</button><button data-f="crm">CRM и приложения</button><button data-f="bot">Боты</button><button data-f="site">Сайты</button><button data-f="text">Тексты</button>
  </div>
  <div class="cases">
   <article class="case" data-k="crm"><img src="img/crm.jpg" alt="CRM студии ремонта"><div class="body"><span class="kind">CRM · заказ с FL.ru</span><h3>Новый дом · CRM для студии ремонта</h3><dl><dt>Задача</dt><dd>Заявки в Excel и мессенджере, мастера звонят «куда ехать», клиенты — «когда придёте».</dd><dt>Сделано</dt><dd>Воронка из 7 этапов, задачи мастерам в Telegram, календарь, кабинет клиента, отчёты, 4 роли.</dd><dt>Результат</dt><dd>Путь от заявки до оплаты в одной системе, 86 проверок пройдено.</dd></dl><div class="links"><a href="https://novyi-dom-crm-production.up.railway.app" target="_blank" rel="noopener">Демо ↗</a><a href="https://github.com/permykov291281-sys/novyi-dom-crm" target="_blank" rel="noopener">Код ↗</a></div></div></article>
@@ -193,6 +195,8 @@ footer{padding:34px 0;color:var(--muted);font-size:14px;text-align:center}
   <article class="case" data-k="site"><img src="img/lume.jpg" alt="Лендинг студии ресниц"><div class="body"><span class="kind">Лендинг · услуги</span><h3>«Люмэ» — студия наращивания ресниц</h3><dl><dt>Задача</dt><dd>Мастеру нужен сайт, который сразу ведёт к записи.</dd><dt>Сделано</dt><dd>14 блоков: цены, свободные окошки, работы до/после, отзывы, форма записи в Google-таблицу.</dd><dt>Результат</dt><dd>Заявки приходят в таблицу, сайт удобен с телефона.</dd></dl><div class="links"><a href="https://lume-lash.netlify.app" target="_blank" rel="noopener">Сайт ↗</a><a href="https://github.com/permykov291281-sys/lume-lash-landing" target="_blank" rel="noopener">Код ↗</a></div></div></article>
   <article class="case" data-k="site"><img src="img/kamen.jpg" alt="Лендинг укладки брусчатки"><div class="body"><span class="kind">Лендинг · стройка</span><h3>«Каменный двор» — укладка брусчатки</h3><dl><dt>Задача</dt><dd>Показать качество работ и быстро посчитать смету для клиента.</dd><dt>Сделано</dt><dd>Калькулятор стоимости, портфолио работ, схемы укладки, заявка в Google-таблицу.</dd><dt>Результат</dt><dd>Клиент видит цену сразу и оставляет заявку.</dd></dl><div class="links"><a href="https://kamenny-dvor.netlify.app" target="_blank" rel="noopener">Сайт ↗</a><a href="https://github.com/permykov291281-sys/kamenny-dvor-landing" target="_blank" rel="noopener">Код ↗</a></div></div></article>
   <article class="case" data-k="crm"><img src="img/karkas.jpg" alt="Калькулятор стоимости каркасного дома"><div class="body"><span class="kind">Программа для Windows</span><h3>КаркасКальк — смета каркасного дома за 5 минут</h3><dl><dt>Задача</dt><dd>Менеджер строительной компании считает смету вручную по Excel-прайсу — долго и с ошибками.</dd><dt>Сделано</dt><dd>Настольное приложение: расчёт по прайсу компании, три уровня цены, проверка по рынку, экспорт в Excel и PDF.</dd><dt>Результат</dt><dd>Смета для клиента за 5 минут, установщик для Windows.</dd></dl><div class="links"><a href="https://github.com/permykov291281-sys/karkas-kalk/releases/latest" target="_blank" rel="noopener">Скачать ↗</a><a href="https://github.com/permykov291281-sys/karkas-kalk" target="_blank" rel="noopener">Код ↗</a></div></div></article>
+  <article class="case" data-k="text"><img src="img/seo-redshift.jpg" alt="SEO-статья Redshift для Cinema 4D"><div class="body"><span class="kind">SEO-статья · заказ с FL.ru</span><h3>«Redshift для Cinema 4D» — статья для продавца софта</h3><dl><dt>Задача</dt><dd>Продавцу подписок Maxon One нужен трафик из Яндекса по запросам «скачать» и «торрент».</dd><dt>Сделано</dt><dd>Статья под 4 ключа клиента (1 459 запросов в месяц), факты сверены с сайтом Maxon, title, description, перелинковка.</dd><dt>Результат</dt><dd>Текст 5 100 знаков, ведёт к покупке подписки; видно черновик ИИ и редактуру.</dd></dl><div class="links"><a href="https://github.com/permykov291281-sys/seo-statya-redshift/blob/main/statya-redshift-cinema-4d.md" target="_blank" rel="noopener">Читать статью ↗</a><a href="https://github.com/permykov291281-sys/seo-statya-redshift" target="_blank" rel="noopener">Как делал ↗</a></div></div></article>
+  <article class="case" data-k="text"><img src="img/seo-wb.jpg" alt="SEO-тексты карточек Wildberries"><div class="body"><span class="kind">Карточки WB · заказ с Kwork</span><h3>Колпачки 8, 10, 12 мм — SEO-тексты карточек Wildberries</h3><dl><dt>Задача</dt><dd>Вывести 3 новых размера так, чтобы их находили по размеру и не ошибались при покупке.</dd><dt>Сделано</dt><dd>Названия до 60 символов, описания, 5 преимуществ, характеристики — всё по чертежам продавца.</dd><dt>Результат</dt><dd>3 карточки без дублей; найдено расхождение размеров у самого продавца.</dd></dl><div class="links"><a href="https://github.com/permykov291281-sys/seo-kartochki-wb/blob/main/kartochki-wb-kolpachki.md" target="_blank" rel="noopener">Читать тексты ↗</a><a href="https://github.com/permykov291281-sys/seo-kartochki-wb" target="_blank" rel="noopener">Как делал ↗</a></div></div></article>
  </div>
 </div></section>
 
